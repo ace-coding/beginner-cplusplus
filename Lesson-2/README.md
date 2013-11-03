@@ -54,4 +54,4 @@ Duration: 1.5 Hours
 - Answer any remaining questions
 
 ## Homework
-- 
+- Write a program which lets you enter multiple test scores and finds your grade on each.
