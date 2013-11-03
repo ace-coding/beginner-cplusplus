@@ -65,7 +65,7 @@ Hello World: [helloworld.cpp](examples/helloworld.cpp)
 multiple lines */
 ```
 
-Variables:
+## Variables:
 - A byte is a unit of digital information.
 - One byte contains 8 bits, and bits can either contain a 0 or a 1.
 - Variables store data. You can do operations with them, change their values, and access them many times during the program.
@@ -103,7 +103,7 @@ x = 10;
 - At the end of the second line, what is `x` equal to? 
 - `x` is equal to `10`. At the beginning, `x` is set to `5`. On the next line, we set `x` equal to `10`.
 
-Operations
+## Operations
 - Applying operations on variables is just like doing math in class.
 - Precedence is a rule that is followed in computer science 
 - You might know this as order of operations or PEMDAS
