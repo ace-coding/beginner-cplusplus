@@ -11,15 +11,15 @@ Duration: 1.5 Hours
 ## Demos (30 minutes): 
 
 ### I/O
-    - `cout`, `cin`
-- Display text, get input, and use it in a sentence: [sentence.cpp](examples/sentence.cpp)
-- Addition calculator of 3 numbers: [calculator.cpp](examples/calculator.cpp)
+    - `printf`, `scanf`, `fgets`
+- Display text, get input, and use it in a sentence: [sentence.c](examples/sentence.c)
+- Addition calculator of 3 numbers: [calculator.c](examples/calculator.c)
 	- after you go over this program with the class, modify it
    		- `int num1, num2, num3, result;`
-   	 	- `std::cout << num1 + num2 + num3;`
+   	 	- `printf("%i",num1 + num2 + num3);`
 - `if` statement
     - `if` / `else`
-	- Grades: [grades.cpp](examples/grades.cpp)
+	- Grades: [grades.c](examples/grades.c)
 		- explain why this program is not good
 			- introduce concept of else if
     			- modify Grades program by replacing ifs with else ifs

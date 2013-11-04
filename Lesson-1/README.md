@@ -1,10 +1,10 @@
-# C++ Lesson 1
+# C Lesson 1
 Date: 7/11/13 
 Duration: 1.5 Hours 
 
 ## Goals/Objectives: 
 1. Download Tool 
-2. Get familiar with C++ 
+2. Get familiar with C
 3. Learn commenting, variables, and commands. 
 
 ## Ice Breakers + Introduction
@@ -17,7 +17,7 @@ A. 0, that’s a hardware problem.
 ## Terminology / Computers:
 - A program in simplest terms is a set of instructions
 - The instructions you write in a program is called source code
-- Source code is written in a programming language, such as C++, Java, or Python
+- Source code is written in a programming language, such as C, Java, or Python
 - There is no best language; each has its own benefits
 - To create a program, you can use any text editor, such as TextEdit or Notepad++
 - However, you probably want to use an Integrated Development Environment, IDE
@@ -27,15 +27,12 @@ A. 0, that’s a hardware problem.
 - A compiler takes the source code you’ve written, and converts it into a language that the computer can understand. This language is known as binary, machine code, executable, or compiled code.
 
 
-Hello World: [helloworld.cpp](examples/helloworld.cpp)
+Hello World: [helloworld.c](examples/helloworld.c)
 
 
-- `#include <iostream>`
-    - Include the `iostream` library. A library is a file that someone else has written which includes many functions that we can use. The `iostream` library includes the C++ basic standard input-output declarations. 
+- `#include <stdio.h>`
+    - Include the `stdio` library. A library is a file that someone else has written which includes many functions that we can use. The `stdio` library includes the C basic standard input-output declarations. 
 - The `#` symbol is a directive for the preprocessor
-- `using namespace std;`
-    - Include the standard namespace. It tells the compiler where to look in the library.
-    - This is a statement, so we require a semicolon at the end.
 - `int main()`
     - You don’t need to understand what the `int` means in this context for this lesson
     - Know that `()` signifies that `main` is a function. It also allows you to put parameters into it, but we are not doing so in this program.
@@ -45,22 +42,18 @@ Hello World: [helloworld.cpp](examples/helloworld.cpp)
 - `//Hello World Demo`
     - `//` means that the line is a comment line. A comment does not have any effect on the program. Anything you write after the double slash will be ignored.
     - Commenting allows the programmer to include short explanations or comments about a specific line or block of code.
-- `cout << "Hello World";`
-    - `cout` is a function declared in the `iostream` library. The `<<` means to output what is after it to a stream, which is usually your screen. It essentially prints what is after the `<<` to the screen.
-    - `"Hello World"` is what we display to the screen. To print out simple text, we surround it in quotation marks.
-    - Since `cout` is a statement, we put a semicolon after it.
+- `printf("Hello World");`
+    - `printf` is a function declared in the `stdio` library. The `("Hello World")` means to print the text `Hello World` on the screen;
+    - Since `printf` is a statement, we put a semicolon after it.
 - `}`
     - `}` is the end of the function. The program quits when it reaches the end curly brace.
 
-- using namespace `std` is frowned upon due to naming conflicts.
-    - If using namespace `std` is not used, then you must type `std::` before any function you use from the `std` namespace.
-    - In our program, we would write `std::cout`.
 - This program can be written in one line.
-- `int main(){ std::cout << "Hello World!" };`
+- `int main(){ printf("Hello World!") };`
 
 - The block comment, `/* */`, allows commenting on multiple lines. An example is shown below.
 
-```c++
+```c
 /* We can comment on
 multiple lines */
 ```
@@ -95,7 +88,7 @@ multiple lines */
     - `x = 5; //x is equal to 5.`
     - `5 = x; //5 is equal to x. What? How can you change a number?`
 
-```c++
+```c
 int x = 5;
 x = 10;
 ```
@@ -115,18 +108,18 @@ x = 10;
 - Division: `/`
 - Say we want to add `10` to a number, this is how we would do it. Let’s print out the result.
 
-```c++
+```c
 int num = 10;
 num = num + 10;
-cout << num;
+printf("%i",num);
 ```
 
 - What does it print out?
 - Let’s do more operations; continue from the previous lines of code.
 
-```c++
+```c
 num = num*5 + 6 / 7;
-cout << num;
+printf("%i",num);
 ```
 
 - Try to do the math, and what do you get?
@@ -143,20 +136,20 @@ cout << num;
 
 - Let’s try add two variables together
 
-```c++
+```c
 int num1 = 4;
 int num2 = 8;
 int result = num1 + num2;
-cout << result;
+printf("%i",result);
 ```
 
 - What do we get?
 - We can modify this program:
 
-```c++
+```c
 int num1 = 4;
 int num2 = 8;
-cout << num1 + num2;
+printf("%i",num1 + num2);
 ```
 
 - As you can see, we have printed out the first number plus the second number without needing another variable to hold the result. This poses advantages and disadvantages depending on the situation.
