@@ -130,7 +130,7 @@ cout << num;
 ```
 
 - Try to do the math, and what do you get?
-- I get 100.8571..... Did you get what I got?
+- I get 100.8571... Did you get what I got?
 - If you didn’t, you’re doing it wrong...
 - Actually, you followed the instructions correctly, but didn’t get what you wanted
 - Hmm, let’s see how to get the correct answer
@@ -151,7 +151,7 @@ cout << result;
 ```
 
 - What do we get?
-- We can modify this program:
+- We can also modify this program:
 
 ```c++
 int num1 = 4;
