@@ -1,12 +1,40 @@
-#include <iostream>
+# include <iostream>
+using namespace std;
+
 int main()
 {
-	int num1, num2, num3;
-	std::cout << "Enter any 3 numbers" << std::endl << "Number 1: ";
-	std::cin >> num1;
-	std::cout << "Number 2 ";
-	std::cin >> num2;
-	std::cout << "Number 3 ";
-	std::cin >> num3;
-	std::cout << num1 + num2 + num3;
+    char op;
+    float num1, num2;
+
+    cout << "Enter operator either + or - or * or /: ";
+    cin >> op;
+
+    cout << "Enter two operands: ";
+    cin >> num1 >> num2;
+
+    switch(op)
+    {
+        case '+':
+            cout << num1+num2;
+            break;
+
+        case '-':
+            cout << num1-num2;
+            break;
+
+        case '*':
+            cout << num1*num2;
+            break;
+
+        case '/':
+            cout << num1/num2;
+            break;
+
+        default:
+            // If the operator is other than +, -, * or /, error message is shown
+            cout << "Error! operator is not correct";
+            break;
+    }
+
+    return 0;
 }
